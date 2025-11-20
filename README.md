@@ -33,33 +33,33 @@ I built this project to understand how modern SOC tools detect threats across en
 - **Alert Analysis**: Viewed, filtered, and interpreted alerts on Waz
 
 ## Screenshots
-1. **VirtualBox Network Configuration**  
+1. **Wazuh Installation**  
    ![Network Setup](vbox_network.png)  
-   *Dual adapter configuration (NAT + Internal)*
+   *Successful installation and startup of the Wazuh Mananger on Ubuntu Server*
 
-2. **OU Structure & Admin Creation**  
+2. **Agent Enrollment**  
    ![ADMINS OU](admins_ou.png)  
-   *Organizational Unit design with _ADMINS group and custom admin user*
+   *Wazuh agent panel showing your Windows endpoint, IP address, and authentication key.*
 
-3. **PowerShell Automation**  
+3. **ossec.conf Configuration**  
    ![PS Script](powershell_script.png)  
-   *Bulk user creation script output*
+   *Custom configuration added to ossec.conf to enable log forwarding and monitoring.*
 
-4. **DHCP Scope Configuration**  
+4. **File Integrity Monitoring Test**  
    ![DHCP Setup](dhcp_scope.png)  
-   *172.16.0.100/24 scope with gateway*
+   *Created test file on Windows that triggered a file-change alert in Wazuh*
 
-5. **Client Domain Join**  
+5. **Snort Installation & Rules**  
    ![Joined Client](client_join.png)  
-   *CLIENT1 successfully joined to domain*
+   *Snort installed with community rules loaded and IDS engine running.*
 
-6. **User Login Test**  
+6. **Snort Attack Detection (Kali Test)**  
    ![Login Test](user_login.png)  
-   *Domain user authentication*
+   *Snort console showing triggered alerts after running Nmap/scans from Kali Linux.*
 
-7. **AD Users & Computers**  
+7. **Wazuh Threat Hunting View**  
    ![ADUC View](ad_users.png)  
-   *1,000+ users in OU structure*
+   *Wazuh dashboard displaying Snort-detected attacks and Windows/Linux security events under Threat Hunting.*
 
 ## Installation
 1. **Requirements**:
