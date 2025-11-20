@@ -6,28 +6,31 @@ This SOC lab simulates a real Security Operations Center using Wazuh (SIEM/XDR),
 I built this project to understand how modern SOC tools detect threats across endpoints and networks. By integrating Wazuh and Snort, then generating traffic from Kali, the lab demonstrates log collection, alerting, intrusion detection, and event correlation, core skills required in SOC Analyst Level 1 roles.
 
 ## Features
-- **Bulk User Creation**: Automated generation of 1,000+ AD accounts via PowerShell
-- **Domain Configuration**: Deployed forest (mydomain.com) with OUs and security groups
-- **Network Services**: Configured DHCP scopes (172.16.0.0/24) and DNS for client connectivity
-- **Virtual Lab**: Built dual-network environment in VirtualBox (NAT + Internal)
-- **Client Integration**: Successfully joined Windows 10 clients to the domain
+- **Wazuh SIEM Deployment**: Installed Wazuh Manager + Dashboard on Ubuntu Server
+- **Windows Endpoint XDR**: Installed and registered Wazuh Agent on Windows
+- **File Integrity Monitoring**: Real-time monitoring of Windows directory changes
+- **Snort IDS Integration**: Configured Snort alerts to feed into Wazuh SIEM
+- **Network Attack Simulation**: Performed ping sweeps, Nmap scans, and traffic tests from Kali Linux
+- **Alert Correlation**: Combined IDS & FIM activity into a single dashboard
+- **Log Analysis**: Parsed alerts for process activity, file changes, and network intrusions
 
-## Technologies & Skills Gained
+## Tools & Skills Gained
 
 ### Technical Skills
-- **SIEM Deployment:** Wazuh Manager installation and configuration
-- **IDS Configuration**: Snort installation, rule configuration, syslog output
-- **XDR Concepts**: Endpoint telemetry, process monitoring, agent registration
-- **File Integrity Monitoring**: Windows directory monitoring using Wazuh
-- **Log Correlation**: Multi-source log ingestion (Windows, Ubuntu, Snort)
-- **Linux Administration**: Ubuntu Server setup, systemctl, permissions, config editing
-- **Network Scanning**: Nmap & ping sweeps from Kali Linux
-- **Virtualization**: Multi-VM setup on VirtualBox (Ubuntu & Kali)
-- **Troubleshooting**: Agent connectivity, permissions, syslog parsing
-
-### Soft Skills Developed
-- Process Automation
-- Technical Documentation
+- **SIEM Deployment**: Installed and configured Wazuh Manager
+- **IDS Configuration**: Snort installation, rules, and syslog outpu
+- **XDR Concepts**: Endpoint telemetry, agent registration, and monitoring
+- **File Integrity Monitoring**: Windows directory monitoring via Wazuh Agent
+- **Incident Response**: Observed alerts and analyzed potential threats
+- **Log Correlation**: Aggregated logs from Windows, Ubuntu, and Snort
+- **Linux Administration**: Ubuntu Server setup, systemctl, config editing
+- **Kali Linux**: Nmap scanning, ping sweeps, and traffic simulation
+- **Network Scanning**: Active scanning to generate test alerts
+- **Virtualization**: Multi-VM lab setup in VirtualBox
+- **Configuration Management**: Edited configs for Wazuh and Snort integration
+- **Security Monitoring**: Continuous log and network monitoring
+- **Endpoint Monitoring**: Observed Windows agent telemetry
+- **Alert Analysis**: Viewed, filtered, and interpreted alerts on Waz
 
 ## Screenshots
 1. **VirtualBox Network Configuration**  
