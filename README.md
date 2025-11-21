@@ -34,31 +34,32 @@ I built this project to understand how modern SOC tools detect threats across en
 
 ## Screenshots
 1. **Wazuh Installation**  
-   ![Network Setup](vbox_network.png)  
+   ![Manager Setup](Manager_Setup.png)  
    *Successful installation and startup of the Wazuh Mananger on Ubuntu Server*
 
 2. **Agent Enrollment**  
-   ![ADMINS OU](admins_ou.png)  
+   ![Windows Agent Key](Windows_Agent_Key.png)  
    *Wazuh agent panel showing your Windows endpoint, IP address, and authentication key.*
 
 3. **ossec.conf Configuration**  
-   ![PS Script](powershell_script.png)  
+   ![Agent Config Update](Agent_Config_Update.png)  
    *Custom configuration added to ossec.conf to enable log forwarding and monitoring.*
 
 4. **File Integrity Monitoring Test**  
-   ![DHCP Setup](dhcp_scope.png)  
+   ![FIM Alert](FIM_Alert.png)  
    *Created test file on Windows that triggered a file-change alert in Wazuh*
 
 5. **Snort Installation & Rules**  
-   ![Joined Client](client_join.png)  
+   ![IDS Setup](IDS_Setup.png)  
    *Snort installed with community rules loaded and IDS engine running.*
 
 6. **Snort Attack Detection (Kali Test)**  
-   ![Login Test](user_login.png)  
+   ![Snort Alerts](Snort_Alerts.png)  
    *Snort console showing triggered alerts after running Nmap/scans from Kali Linux.*
 
 7. **Wazuh Threat Hunting View**  
-   ![ADUC View](ad_users.png)  
+   ![Correlated Attacks](Correlated_Attacks_1.png)
+   ![Correlated Attacks](Correlated_Attacks_2.png)
    *Wazuh dashboard displaying Snort-detected attacks and Windows/Linux security events under Threat Hunting.*
 
 ## Installation
